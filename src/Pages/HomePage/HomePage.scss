@@ -1,0 +1,11 @@
+@import "../../App.scss"; 
+.categories{
+    .categories-item{
+        .title-md{
+            padding: 1.2rem 2rem 1.2rem 4rem;
+           border-bottom: 5px solid #f72b0c;
+            color:$clr-gray;
+           box-shadow: rgba(66, 132, 198, 0.2) 0px 8px 24px;
+        }
+    }
+}

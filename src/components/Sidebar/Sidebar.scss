@@ -1,0 +1,41 @@
+@import "../../App.scss";
+
+.sidebar {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 7px;
+  transform: translateX(-100%);
+  z-index: 1000;
+  transition: $transition-ease;
+  .sidebar-hide-btn {
+    position: relative;
+    left:87%;
+    top:3%;
+    transition: $transition-ease;
+  }
+  .category-list{
+    overflow-x: scroll;
+    height: calc(100vh - 60px);
+      
+    li{
+      &:hover{
+        color:rgb(94, 198, 236);
+      }
+    }
+    
+    .category-items{
+      padding:10px;
+      
+      display: flex;
+      flex-direction:column;
+    }
+  }
+}
+
+.show-sidebar {
+  transform: translateX(0);
+}

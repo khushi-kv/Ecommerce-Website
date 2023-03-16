@@ -1,0 +1,10 @@
+@import "../../App.scss";
+.header{
+    background-color: rgb(13, 189, 189);
+}
+@media screen and (max-width:992px) {
+   .header-content{
+       flex-direction:column;
+       padding-bottom: 10px;
+   } 
+}

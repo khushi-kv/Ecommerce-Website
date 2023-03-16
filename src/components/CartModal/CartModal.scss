@@ -1,0 +1,41 @@
+@import "../../App.scss";
+
+.cart-modal {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  background-color: $clr-white;
+  width: 360px;
+  box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
+  padding: 1.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: $transition-ease;
+  z-index: 1;
+  height: 460px;
+  overflow-y: scroll;
+
+  .cart-img {
+    width: 100px;
+  }
+
+  .cart-modal-list {
+    .modal-img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cart-modal-item {
+      grid-template-columns: 64px auto 65px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .view-shopping-cart {
+      margin-left: 120px;
+      border: 1px solid rgb(224, 161, 68);
+      background-color:rgb(244, 156, 55);
+      padding: 5px;
+      margin-top: 20px;
+    }
+  }
+}

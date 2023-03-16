@@ -1,0 +1,64 @@
+@import "../../App.scss";
+.cart {
+  overflow-x: scroll;
+  padding-top: 2rem;
+  min-height: 85vh;
+  .cart-table {
+    min-width: 1000px;
+
+    .cart-content {
+      display: grid;
+      grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr;
+      background-color: white;
+      padding: 20px;
+
+      .cart-quantity {
+        .qty-decrease,
+        .qty-increase,
+        .qty-value {
+          font-size: 13px;
+          width: 28px;
+          height: 28px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+    .cart-body {
+      margin-top: 20px;
+    }
+    .cart-footer {
+      .clear-cart {
+        border: 1px solid red;
+        padding: 6px;
+        color: red;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .btn-text {
+    margin-right: 120px;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.shopping-cart {
+  width: 30%;
+  object-fit: cover;
+}
+.shopping-btn {
+  padding: 0.65rem 2.8rem;
+  margin-top: 1.6rem;
+  margin-bottom: 10px;
+  border: 1px solid $clr-orange;
+  transition: $transition-ease;
+
+  &:hover {
+    background-color: transparent;
+    color: $clr-orange;
+  }
+}

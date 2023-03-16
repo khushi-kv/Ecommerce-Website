@@ -1,0 +1,62 @@
+@import "../../App.scss";
+.Navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .Navbar-content {
+    gap: 20px;
+  }
+  .Navbar-Collapse {
+    .Navbar-Search {
+      padding: 4px;
+      margin-left: 32px;
+      border-radius: 2px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      .form-control {
+        width: 100%;
+        padding: 8px;
+        color: rgba(0, 0, 0, 0.8);
+
+        &::placeholder {
+          font-size: 13.5px;
+          font-family: $font-family-manrope;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
+    .Navbar-nav-listItems {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  .cart-btn {
+    position: relative;
+
+    .cart-items-value {
+      position: absolute;
+      top: -10px;
+      right: -15px;
+      background-color: $clr-whitesmoke;
+      font-weight: 500;
+      color: $clr-black;
+      width: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &:hover {
+      .cart-modal {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.search-list{
+  cursor:pointer;
+}
